@@ -87,7 +87,7 @@ class AuthController extends Controller {
 
                 if( !isset($user->id) )
                 {
-                    return 'err';
+                    return 'apmpasswordemail';
                 }
 
                 Yii::$app->user->login($user, $time);
@@ -108,7 +108,7 @@ class AuthController extends Controller {
 
             if( !isset($user->id) )
             {
-                return 'err';
+                return 'passwordemail';
             }
 
             Yii::$app->user->login($user, $time);

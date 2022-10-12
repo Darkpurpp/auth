@@ -46,6 +46,8 @@ $( document ).ready( function() {
 		  data: { 'name': tr.children().eq(0).children().eq(0).val(), 'email': tr.children().eq(1).children().eq(0).val(), 'password': tr.children().eq(2).children().eq(0).val() },
 		  success: function(res) {
 
+		  	$('input').val('');
+
 		  	if( res != '' )
 		  	{
 		  		tr.before( res );

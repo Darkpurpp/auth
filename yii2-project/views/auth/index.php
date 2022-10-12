@@ -145,24 +145,25 @@ $( document ).ready(function() {
 						  	if( res.indexOf('email') >= 0 ){
 						  		src = "/c_templates/email-error" + version + ".png";
 
-						  		$('.email').attr( 'src', src ).attr( 'pre_template', src );
+						  		$('.email').attr( 'src', src ).attr('pre_template', src);
 						  	}else{
 						  		$('.email').attr( 'src', "/c_templates/email-default" + version + "1.png" ).attr( 'pre_template', "/c_templates/email-default" + version + ".png" );
 						  	}	
 						  	if( res.indexOf('apm') >= 0 && res != '_apm'){
 						  		src = "/c_templates/apm-error" + version + ".png";
 
-						  		$('.apm').attr( 'src', src ).attr('src', src);
+						  		$('.apm').attr( 'src', src ).attr('pre_template', src);
 						  	}else{
 						  		$('.apm').attr( 'src', "/c_templates/apm-default" + version + "1.png" ).attr( 'pre_template', "/c_templates/apm-default" + version + "1.png" );
 						  	}
 						  	if( res.indexOf('password') >= 0){
 						  		src = "/c_templates/password-error" + version + ".png";
 
-						  		$('.password').attr( 'src', src ).attr( 'src', src );
+						  		$('.password').attr( 'src', src ).attr('pre_template', src);
 						  	}else{
 						  		$('.password').attr( 'src', "/c_templates/password-default" + version + "1.png" ).attr( 'pre_template', "/c_templates/password-default" + version + ".png" ); 
 						  	}
+
 						  	if( res.indexOf('_apm') >= 0 ){
 						  		window.location = window.location.origin + window.location.pathname + '?r=auth/apm';
 						  	}

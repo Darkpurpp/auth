@@ -37,11 +37,6 @@ class AuthController extends Controller {
 
             $data = Yii::$app->request->post();
 
-            if( $data['version'] == '_apm' )
-            {
-                return $data['version'];
-            }
-
             $error = '';
 
             if( empty($data['password']) )
